@@ -1,0 +1,79 @@
+"use strict";
+
+import * as UTILS from "utils";
+import TileType from "./TileType.js";
+
+const images = await UTILS.DOMUtils.preloadImages([
+  "blank.png",
+  "4way.png",
+], "./src/assets/images/tiles/tile_");
+const tileTypes = [
+  new TileType(images[0], [0, 0, 0, 0]),
+  new TileType(images[1], [1, 1, 1, 1]),
+];
+const rules = [
+  [0, 0],
+  [1, 1],
+];
+
+function matchesRule(endType, matchTypes) {
+  for (let i = 0; i < rules.length; i++) {
+    for (let j = 0; j < matchTypes.length; j++) {
+      const normal = [endType, matchTypes[j]];
+      const reversed = [matchTypes[j], endType];
+
+      if (rules[i].toString() === normal.toString()) return true;
+      if (rules[i].toString() === reversed.toString()) return true;
+    }
+  }
+
+  return false;
+}
+
+class Tile {
+  constructor(grid, x, y) {
+    this.grid = grid;
+    this.x = x;
+    this.y = y;
+    this.collapsed = false;
+    this.options = [...tileTypes];
+  }
+
+  reset() {
+    this.collapsed = false;
+    this.options = [...tileTypes];
+  }
+
+  cell(dx, dy) {
+    return this.grid.getPos(this.x + dx, this.y + dy);
+  }
+
+  getAllOptionsFace(face) {
+    return [...new Set(this.options.map((option) => option[face]))];
+  }
+
+  updateOptions() {
+    const top = this.cell(0, -1);
+    const bottom = this.cell(0, 1);
+    const left = this.cell(-1, 0);
+    const right = this.cell(1, 0);
+
+    this.options = this.options.filter((option) => {
+      if (top && !matchesRule(option.top, top.getAllOptionsFace("bottom")))
+        return false;
+      if (
+        bottom &&
+        !matchesRule(option.bottom, bottom.getAllOptionsFace("top"))
+      )
+        return false;
+      if (left && !matchesRule(option.left, left.getAllOptionsFace("right")))
+        return false;
+      if (right && !matchesRule(option.right, right.getAllOptionsFace("left")))
+        return false;
+
+      return true;
+    });
+  }
+}
+
+export default Tile;

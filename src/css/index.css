@@ -17,4 +17,16 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
+  image-rendering: pixelated;
+}
+
+#reset {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
 }
