@@ -1,0 +1,86 @@
+* {
+  --bgColor: #2d3345;
+  --startBtnColor: rgb(18, 121, 64);
+  --stepBtnColor: rgb(17, 130, 196);
+  --resetBtnColor: rgb(228, 6, 6);
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 0;
+  background-color: var(--bgColor);
+}
+
+.editor {
+  margin-right: 20px;
+  width: 325px;
+}
+
+.canvas-container {
+  border: 1px solid white;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.controls {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.tiles-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between each tile */
+  width: calc(100% - 325px); /* Adjust this to control the sidebar width */
+  height: 100%;
+  padding-left: 10px;
+  border-left: 1px solid white;
+  /* overflow-y: auto; */
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px; /* Width of each tile container */
+  height: 122px;
+  margin-bottom: 15px;
+}
+
+.tile-container canvas {
+  border: 1px solid white;
+  cursor: pointer;
+  margin-bottom: 10px; /* Space between canvas and delete button */
+  transition: 0.3s ease;
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+.tile-container canvas:hover {
+  scale: 1.1;
+}
+
+.tile-container canvas:active {
+  scale: 1.05;
+}
+
+.delete-tile-button {
+  background-color: rgb(212, 13, 13);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-tile-button:hover {
+  background-color: darkred;
+}
+
+.tile-background {
+  background-image: url("/src/assets/images/tile_background.png");
+  background-size: cover;
+}

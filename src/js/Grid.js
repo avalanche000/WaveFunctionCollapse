@@ -1,47 +1,79 @@
 "use strict";
 
 import * as UTILS from "utils";
-import Tile from "./Tile.js";
 
 class Grid {
-  constructor(size) {
-    this.size = size;
-    this.tiles = UTILS.arrayUtils
-      .nestedCounter(size, size)
-      .map((pos) => new Tile(this, pos[1], pos[0]));
-    this.done = false;
+  constructor(width, height, defaultTileTypes, endBehavior = "stop") {
+    this.defaultTileTypes = defaultTileTypes;
+    this.endBehavior = endBehavior;
+    this.width = width;
+    this.height = height;
+    this.tiles = UTILS.arrayUtils.nestedCounter(height, width).map((pos) => {
+      const tile = {
+        collapsed: false,
+        x: pos[1],
+        y: pos[0],
+        options: this.defaultTileTypes,
+        offset: (dx, dy) => this.getTile(pos[1] + dx, pos[0] + dy),
+        getAllEdges: () => {
+          const [top, bottom, left, right] = [
+            new Set(),
+            new Set(),
+            new Set(),
+            new Set(),
+          ];
+
+          tile.options.forEach((option) => {
+            top.add(option.edges.top);
+            bottom.add(option.edges.bottom);
+            left.add(option.edges.left);
+            right.add(option.edges.right);
+          });
+
+          return {
+            top: [...top],
+            bottom: [...bottom],
+            left: [...left],
+            right: [...right],
+          };
+        },
+      };
+
+      return tile;
+    });
   }
 
-  getPos(x, y) {
-    if (x < 0) return null;
-    if (x > this.size - 1) return null;
-    if (y < 0) return null;
-    if (y > this.size - 1) return null;
-
-    return this.tiles[x + y * this.size];
+  reset() {
+    this.tiles.forEach((tile) => {
+      tile.collapsed = false;
+      tile.options = this.defaultTileTypes;
+    });
   }
 
-  update() {
-    const uncollapsedTiles = this.tiles.filter((tile) => !tile.collapsed);
-
-    for (let i = 0; i < 3; i++)
-      uncollapsedTiles.forEach((tile) => tile.updateOptions());
-
-    const minOptions = Math.min(
-      ...uncollapsedTiles.map((tile) => tile.options.length)
-    );
-    const activeTile = UTILS.arrayUtils.random(
-      uncollapsedTiles.filter((tile) => tile.options.length === minOptions)
-    );
-
-    if (activeTile == null) {
-      this.done = true;
-      console.log("Done");
-    } else {
-      activeTile.collapsed = true;
-      if (activeTile.options.length > 0)
-        activeTile.options = [UTILS.arrayUtils.random(activeTile.options)];
+  getTile(x, y) {
+    if (x < 0 || x > this.width - 1 || y < 0 || y > this.height - 1) {
+      switch (this.endBehavior) {
+        case "stop":
+          return null;
+        case "wrap":
+          x = UTILS.numberUtils.wrap(0, this.width, x);
+          y = UTILS.numberUtils.wrap(0, this.height, y);
+          break;
+        case "wrapX":
+          if (y < 0 || y > this.height - 1) return null;
+          x = UTILS.numberUtils.wrap(0, this.width, x);
+          break;
+        case "wrapY":
+          if (x < 0 || x > this.width - 1) return null;
+          y = UTILS.numberUtils.wrap(0, this.height, y);
+          break;
+        default:
+          console.error("Bad end behavior type " + this.endBehavior);
+          return null;
+      }
     }
+
+    return this.tiles[x + y * this.width];
   }
 }
 

@@ -1,0 +1,180 @@
+{
+  "tiles": [
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "empty",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAA9JREFUKFNjZCAAGEeGAgAFrAAJMBf+CwAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "ground",
+        "bottom": "ground",
+        "left": "ground"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAFVJREFUKFNjZCAAGAkqyHIQ+A9TxMfBxPDpxz+Grz/+MHBzsICFGUEKsEnANDHGW/D8h6lGtw6kEWwCSAJmLMw0mBhYAUhSUoANbD+yYrgbkI1GNwkAIbIuYKIzEesAAAAASUVORK5CYII="
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "ground",
+        "bottom": "ground",
+        "left": "ground"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAGxJREFUKFNjZEACMnmC/0HcJ5PeM8KE4QyQAEgBuwgbw926lwgFWQ4CYF0gwMfBxPDpxz+Grz/+MHBzsIDFGEEKsEnArYi34PkPU43sHpiJYBNAHJixMNNgYmAFIElJATaw/ciK4W5ANhrdJABEPzZgUrhFgQAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADhJREFUKFNjZEACMnmC/0HcJ5PeM8KE4QyQAEEFyk3i/3+++UWBCQStAClgF2FjuFv3ErsjyXIDANrGJgndYJPlAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAFJJREFUKFNjZCAAGJHlr+YL/AfxtSd+gIvDGSBJXm4OsPrPX3/AFYEVwCRZfVjBCn5v+Q1XRJwCZFOwWgFzKF5HghQpN4n///nmF8OTSe/hjgcAkrsxCenlrNUAAAAASUVORK5CYII="
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAGZJREFUKFNjZCAAGGHyz1lY/kv++cMIokFiIDaIBhMwQQYLqPITEBqkCKHAgoHhq3UQWIL76DoGySNIJoBNsWH5j6yA4QS6CSBVuKxAdodNnTDDkaa3qI6E+UQmTxDsgyeT3sN9BwDHVCwJcEmuLwAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAGJJREFUKFNjZCAAGNHlpdzW/geJPdsVDJYDEzBBXgFxsPrPH15iKgBJOnCBNTMc+MbIcHOVDcIEkKB62JH/yApgpsDdALIG2QqYO1AUgASZNFIYnkx6DxdH8YVMniDYEcgKAOHRLAkmoOYuAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "stem-out"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAFBJREFUKFNjZEACyk3i/3+++cXwZNJ7RpgwnCGTJ/gfJohXAbIkSAMjSCe7CBsDyGgQwKoAZjRI4d26l3BrwSbAJGFuwDABXQG6KSjGYTMFAEjnJgkV86o6AAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "stem-out",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEtJREFUKFNjZEACMnmC/0HcJ5PeM8KE4QyQAEgBuwgbw883v+CKUBTAFCGbgqFAuUn8P8gErFYgmwCzijQrYL7A6QaYL+7WvYSbDADiliQ9IMtQqAAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "stem-out",
+        "bottom": "stem-in",
+        "left": "stem-out"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAFBJREFUKFNjZEACMnmC/0HcJ5PeM8KE4QyQgHKT+P+fb37hVoDVBGRBdDa7CBsDI0gQxAAZDQLIbBAf7AaYTmQHwxyL4kiCvoBZd7fuJVwjANCJLF6Mdl1NAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "stem-out",
+        "bottom": "stem-in",
+        "left": "stem-out"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEdJREFUKFNjZCAAGClXIJMn+B9kypNJ71FMU24S///zzS8GRpgCdhE2hrt1L8GKYGIgNoYAsptApsKNRTYJZDTMShR7sbkHADKaHT2sfI32AAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "stem-out",
+        "bottom": "stem-in",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADhJREFUKFNjZCAAGGmnQCZP8D+7CBsDhhUgCWRr8Sp4Muk9I4oCmLE/3/xiAEmCTMJQABKESYLYADpgEl7euLeKAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "stem-in",
+        "left": "stem-out"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADxJREFUKFNjZCAAGClXIJMn+B9kypNJ77GaxghTwC7CxvDzzS8MhWBdMEXYTIIbi2zS3bqXcHEUe7G5BwAM3BcJNDp92QAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "stem-in",
+        "bottom": "empty",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAENJREFUKFNjZEACMnmC/0HcJ5PeM8KE4QyQAEwBsiIUBdgUYVXALsLG8PPNL7AtGApgdis3if8HKcKpAKsjkX1EtAIANRIVPVGQ06YAAAAASUVORK5CYII="
+    },
+    {
+      "edges": {
+        "top": "stem-out",
+        "right": "empty",
+        "bottom": "empty",
+        "left": "stem-in"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAERJREFUKFNjZEACMnmC/9lF2Bju1r1khAnDGSBJmOCTSe9RFeCSBGlghEmCjP755hcDsm4UBegSGG5AdiwyG+4YshUAACxUFwn4eRGVAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "empty",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAA9JREFUKFNjZCAAGEeGAgAFrAAJMBf+CwAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "empty",
+        "right": "empty",
+        "bottom": "empty",
+        "left": "empty"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAA9JREFUKFNjZCAAGEeGAgAFrAAJMBf+CwAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "ground",
+        "right": "ground",
+        "bottom": "ground",
+        "left": "ground"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAF9JREFUKFNjzHIQ+M/AwMDw9ccfBm4OFhCTgY+DieHTj39gNiNIAbIAWBRJA1gBTBCmENk0FBOQJWCaGOMteP7D7IYJIpsItwKmG9k9IDGwAhBDUoAN7nIMNyAbjW4SAC8XPdK5vzKjAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "ground",
+        "right": "ground",
+        "bottom": "ground",
+        "left": "ground"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAHpJREFUKFNjzHIQ+M/AwMDw9ccfBm4OFhCTgY+DieHTj39gNiNIAbIASDA0kAksuXr9P4gCMA+q092TgUFZToChY+I7TBMq8oUY7j76ANYJA4zxFjz/QXYjG4tsItwKkG6QscjuATkcrADESIhkgxuN7CMURyJ7F2YSAAVCQNKtWt2dAAAAAElFTkSuQmCC"
+    }
+  ],
+  "rules": [
+    ["empty", "empty"],
+    ["ground", "ground"],
+    ["stem-out", "stem-in"]
+  ]
+}

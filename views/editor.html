@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tile Editor</title>
+  <link href="src/css/editor.css" rel="stylesheet" type="text/css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "utils": "https://avalanche000.github.io/utils/index.js"
+      }
+    }
+  </script>
+  <script src="src/js/editor.js" type="module" defer></script>
+</head>
+
+<body>
+  <div class="editor">
+    <div class="canvas-container">
+      <canvas
+        id="tileCanvas"
+        class="tile-background"
+        width="8"
+        height="8"
+        style="
+          border: 1px solid white;
+          width: 160px;
+          height: 160px;
+          image-rendering: pixelated;
+        "
+      ></canvas>
+      <br />
+      <label for="colorPicker">Select Color: </label>
+      <input type="color" id="colorPicker" value="#000000" />
+    </div>
+    <div class="controls">
+      <label>Top Edge: <input type="text" id="topEdge" /></label><br />
+      <label>Bottom Edge: <input type="text" id="bottomEdge" /></label><br />
+      <label>Left Edge: <input type="text" id="leftEdge" /></label><br />
+      <label>Right Edge: <input type="text" id="rightEdge" /></label>
+
+      <label>Rotations:</label><br />
+      <label
+        ><input type="radio" name="rotation" value="1" checked /> 1</label
+      >
+      <label><input type="radio" name="rotation" value="2" /> 2</label>
+      <label><input type="radio" name="rotation" value="4" /> 4</label><br />
+    </div>
+    <button id="clearCanvas">Clear Canvas</button>
+    <button id="saveTile">Save Tile</button>
+    <button id="exportTiles">Export Tiles</button>
+    <button id="importTiles">Import Tiles</button>
+  </div>
+
+  <div class="tiles-sidebar" id="tilesSidebar">
+    <!-- <h3>Saved Tiles</h3> -->
+  </div>
+</body>
+
+</html>

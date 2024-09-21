@@ -1,0 +1,71 @@
+{
+  "tiles": [
+    {
+      "edges": {
+        "top": "1",
+        "right": "1",
+        "bottom": "0",
+        "left": "0"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEVJREFUKFNj/P///38GKBBNPglmvZ5rDhNiYAQpYGRkZASJiCSdACt+M88CzAfLkaUAbj4DA3YrcCpAlsDqBpwK0CWQ+QD0BT9rSsoGXwAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "0",
+        "right": "1",
+        "bottom": "1",
+        "left": "0"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEBJREFUKFNj/P///38GPIARpICRkZERmxqwHEkKRJJOYFiHYgLRCt7MswC7CcMNMBMwFMB8IJp8Esx8Pdcc7ikAHqs/a+wGq9oAAAAASUVORK5CYII="
+    },
+    {
+      "edges": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "1"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEJJREFUKFNj/P///38GPIARpICRkZERmxqwHEEFIkknMKx4M88CbCJYM0EFyFbAFKOYQJQCmA9Ek0+Cma/nmsM9BQAv/ULpPtrnNQAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "1",
+        "right": "0",
+        "bottom": "0",
+        "left": "1"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEhJREFUKFNj/P///38GKBBNPglmvZ5rDhNiYAQpYGRkZASJiCSdACt+M88CzAfLEVQA0wU3E90EggqQrUA2BasbcCpAl0DmAwAFZkLpSU3XIQAAAABJRU5ErkJggg=="
+    },
+    {
+      "edges": {
+        "top": "0",
+        "right": "1",
+        "bottom": "0",
+        "left": "1"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACxJREFUKFNj/P///38GPIARpICRkZERmxqwHEEFIkkn8FtBUAFBK4hSgM+bAJVCLGuWBSPTAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "1",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADVJREFUKFNj/P///38GKBBNPglmvZ5rDhNiYAQpYGRkZASJiCSdACt+M88CzAfLDRkF+LwJAI7AVelrDjfHAAAAAElFTkSuQmCC"
+    },
+    {
+      "edges": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
+      },
+      "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAADRJREFUKFNj/P///38GPIARpICRkZERmxqwHEkKRJJOgK17M88CbCKGCQQVoLuDeDfg8yYAW2s/6VBKvvYAAAAASUVORK5CYII="
+    }
+  ],
+  "rules": [
+    ["0", "0"],
+    ["1", "1"]
+  ]
+}
